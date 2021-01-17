@@ -1,16 +1,12 @@
-# Description
-Dockerfile which installs Node-SASS in an Alpine Linux image.
+# docker-node-sass-alpine
+
+Just a Dockerfile, which installs node-sass on top of the node:alpine image.
 
 # Docker Hub
-https://hub.docker.com/r/blairguk/node-sass-alpine/
 
-# Pull image
-docker pull blairguk/node-sass-alpine
+[garzj/node-sass-alpine](https://hub.docker.com/r/garzj/node-sass-alpine)
 
-# Run image
-docker run blairguk/node-sass-alpine:<NODE_VERSION> node-sass-alpine
+# Upgrade version
 
-# Upgrade Node
-
-* `docker build -t blairguk/node-sass-alpine:<NODE_VERSION> .`
-* `docker push blairguk/node-sass-alpine:<NODE_VERSION>`
+- Change the version inside the Dockerfile
+- `git add Dockerfile && git commit -m "Upgrade node version" && git push origin master`
